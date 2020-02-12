@@ -17,16 +17,14 @@
       <div class="col-12 col-md-4 peer pX-40 pY-80 h-100 bgc-white scrollable pos-r" style="min-width: 320px;">
 
         <h3 class="fw-300 c-grey-900 mB-40">
-          <a href="https://appseed.us/admin-dashboards/django-dashboard-adminator">Django Dashboard Adminator</a> - Login
+          <a href="#">Django Dashboard Adminator</a> - Login
         </h3>
 
         {% if msg %}
             <h4 class="fw-300 c-grey-900 mB-40">{{ msg | safe }}</h4>
         {% else %}
             <h4 class="fw-300 c-grey-900 mB-40">
-              Use default credentials: test / ApS12_ZZs8
-              <br />
-              OR <a href={% url 'register' %} >create your own user</a>
+              User: admin / admin
             </h4>
         {% endif %}
 
@@ -50,16 +48,12 @@
                 <div class="checkbox checkbox-circle checkbox-info peers ai-c">
                   <input type="checkbox" id="inputCall1" name="inputCheckboxesCall" class="peer">
                   <label for="inputCall1" class="peers peer-greed js-sb ai-c">
-                    <span class="peer peer-greed">Remember Me</span>
+                    <span class="peer peer-greed">Remember Me&nbsp; &nbsp; </span>
                   </label>
                 </div>
               </div>
               <div class="peer">
                 <button type="submit" class="btn btn-primary">Login</button>
-                
-                &nbsp; &nbsp; 
-                <span class="text-small font-weight-semibold">Not a member?</span> 
-                <a href={% url 'register' %} class="text-black text-small">Register</a>
               </div>
             </div>
           </div>
